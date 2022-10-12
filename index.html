@@ -91,6 +91,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="style.css">
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f4e4439d87.js" crossorigin="anonymous"></script>
   </head>
@@ -296,6 +297,8 @@
     </div>
 
     <div class="download">
+      <div class="h-captcha" data-sitekey="e5ce7293-da0f-47b4-935c-eeb4bde696dc"></div>
+      <br>
         <a href="images/cv.png" class="btn"> download CV </a>
     </div>
 
@@ -862,7 +865,18 @@ Buy Me A Coffee Is A Service For Online Content Creators That They May Use To Re
 </ul>
            </div>
           </div>
-
+          <br>
+          <section class="contact" id="privacy">
+        <div class="cad">
+          <h6 class="project-title">Privacy Policy</h6>
+          <p class="project-details">
+            This site uses Google cookies to provide services and analyze traffic. <a href="privacypolicy.html" target="_blank">Learn more</a>
+            <br>
+            <a href="https://simpleanalytics.com/chinonso-chikelue756.github.io?utm_source=chinonso-chikelue756.github.io&utm_content=badge" referrerpolicy="origin" target="_blank"><img src="https://simpleanalyticsbadges.com/chinonso-chikelue756.github.io" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" /></a>
+          </a>
+          </p>
+        </div>
+     
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
@@ -900,6 +914,7 @@ Buy Me A Coffee Is A Service For Online Content Creators That They May Use To Re
             </div>
             <input type="text" placeholder="subject">
             <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <div class="h-captcha" data-sitekey="e5ce7293-da0f-47b4-935c-eeb4bde696dc"></div>
             <button class="btn"> send message </button>
         </form>
 
@@ -935,7 +950,26 @@ Buy Me A Coffee Is A Service For Online Content Creators That They May Use To Re
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<script type="text/javascript">
+  hcaptcha.render('captcha-1', {
+    sitekey: 'e5ce7293-da0f-47b4-935c-eeb4bde696dc',
+    theme: 'dark',
+    'error-callback': 'onError',
+  });
+  hcaptcha.execute(widgetID, { async: true })
+    .then(({ response, key }) => {
+        console.log(response, key);
+    })
+    .catch(err => {
+        console.error(err);
+    });
+</script>
+<script type="text/javascript">
+  var yourFunction = function () {
+    console.log('hCaptcha is ready.');
+    var widgetID = hcaptcha.render('captcha-1', { sitekey: 'e5ce7293-da0f-47b4-935c-eeb4bde696dc' });
+  };
+</script>
 <!-- custom js file link  -->
 <script src="script.js"></script>
 

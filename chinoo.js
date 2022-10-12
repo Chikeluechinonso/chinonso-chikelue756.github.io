@@ -74,7 +74,7 @@ let stateCheck = setInterval(() => {
 }, 100);
 
 
-var mrepol742 = "                                               \n" +
+var chinonso-chikelue755 = "                                               \n" +
 "                                    \"\"#    mmmmmm    mm   mmmm \n" +
 " mmmmm   m mm   mmm   mmmm    mmm     #        #\"   m\"#  \"   \"# \n" +
 " # # #   #\"  \" #\"  #  #\" \"#  #\" \"#    #       m\"   #\" #      m\" \n" +
@@ -84,7 +84,7 @@ var mrepol742 = "                                               \n" +
                       "                                          \n" +
 "                      ";
 
-console.log(chinonso, '\nHello World,\n\nCool to see you here!\nWe hope you find what you are looking for.\nFeel free to ask us any questions:\nhttps://facebook.com/chinonso.Devl\n\nHave a bugless day!\n\n');
+console.log(chinonso-chikelue756, '\nHello World,\n\nCool to see you here!\nWe hope you find what you are looking for.\nFeel free to ask us any questions:\nhttps://facebook.com/chinonso.Devl\n\nHave a bugless day!\n\n');
 
 function updateTheme() {
 

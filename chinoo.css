@@ -151,7 +151,7 @@ p.top {
         padding-right: 5%;
     }
 
-    footer {
+    .footer {
         padding-top: 10% !important;
         padding-bottom: 10% !important;
     }
@@ -269,13 +269,13 @@ p.top {
     }
 }
 
-footer{
+.footer{
     box-shadow: 0 0 5em #4286f460;
     background-color: #ffffff;
-    margin-top:  10%;
+    margin-top:  20%;
     color: #212121;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 5%;
 }
@@ -360,4 +360,18 @@ li{
   display: block;
   text-align: center;
  justify-content: center;
+}
+
+.fa{
+ padding: 20px; 
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
 }
